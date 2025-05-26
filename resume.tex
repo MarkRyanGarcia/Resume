@@ -1,0 +1,232 @@
+%-------------------------
+% Resume in Latex
+% Author : Mark Garcia
+% Based off of: https://github.com/sb2nov/resume
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% Icons
+\usepackage{graphicx}
+
+\newcommand{\phoneicon}{\raisebox{-0.6ex}{\includegraphics[height=10pt]{icons/phone-icon.png}}}
+\newcommand{\emailicon}{\raisebox{-0.6ex}{\includegraphics[height=10pt]{icons/email-icon.png}}}
+\newcommand{\linkedinicon}{\raisebox{-0.8ex}{\includegraphics[height=12pt]{icons/linkedin-icon.png}}}
+\newcommand{\githubicon}{\raisebox{-0.8ex}{\includegraphics[height=12pt]{icons/github-icon.png}}}
+\newcommand{\portfolioicon}{\raisebox{-0.6ex}{\includegraphics[height=10pt]{icons/portfolio-icon.png}}}
+\newcommand{\homeicon}{\raisebox{-0.6ex}{\includegraphics[height=10pt]{icons/house-solid.png}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape Mark Ryan Garcia} \\ \vspace{1pt}
+    \phoneicon \hspace{1pt}(951) 432-6885 $|$ \emailicon \hspace{1pt} \href{mailto:markrygarcia@gmail.com}{\underline{markrygarcia@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/mark-garcia-aa9b2b306/}{\linkedinicon} \hspace{1pt} \href{https://www.linkedin.com/in/markryangarcia}{\underline{linkedin.com/in/MarkRyanGarcia}} \\
+    % {\homeicon} Address Here if needed $|$
+    \href{https://github.com/MarkRyanGarcia}{\githubicon} \hspace{1pt} \href{https://github.com/MarkRyanGarcia}{\underline{github.com/MarkRyanGarcia}} $|$
+    \portfolioicon \hspace{1pt} \href{https://www.markg.dev}{\underline{markg.dev}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {California State University, Fullerton}{GPA: 3.84}
+      {B.S. in Computer Science, Minor in Mathematics}{Aug. 2022 -- May 2026}
+    \resumeItem{\textbf{Relevant Coursework: }Data Structures and Algorithms, Web Front-End and Back-End Engineering, File Strucures and Database Systems, Discrete Mathematics, Calculus I, II, III, Linear Algebra and Differential Equations}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Software Engineer Intern}{May 2025 -- Present}
+      {Glenair, Inc.}{Anaheim, CA}
+      \resumeItemListStart
+        \resumeItem{Developing a web application to generate Zebra printer label templates using FastAPI, SQLAlchemy, React (TypeScript), and the company’s SQL Server database.}
+        \resumeItem{Collaborating with engineering teams to design dynamic label formats that streamline internal manufacturing processes.}
+        \resumeItem{Writing backend API endpoints and integrating them with a frontend UI for user-friendly label creation.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Supplemental Instruction (SI) Leader}{Jan. 2024 -- Present}
+      {California State University, Fullerton}{Fullerton, CA}
+      \resumeItemListStart
+        \resumeItem{Develop comprehensive study materials to simplify Calculus I and Calculus II concepts, resulting in a \textbf{10\%} average increase in student comprehension and grades.}
+        \resumeItem{Utilize innovative teaching techniques such as group discussions on practice problems and fostering collaborative study environments.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Crew Trainer}{June 2022 -- May 2025}
+      {McDonalds}{Chino Hills, CA}
+      \resumeItemListStart
+        \resumeItem{Showcase expertise across multiple stations to ensure efficient workflow and excellent customer service.}
+        \resumeItem{Train new hires, creating a positive, motivating atmosphere for their development.}
+    \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Doodle Jump Clone – Game Development Workshop} $|$ \emph{C\#, Unity}}{Feb 2025 -- Mar. 2025}
+          \resumeItemListStart
+            \resumeItem{Designed and led a beginner-friendly Unity workshop for over 20 students on building a Doodle Jump-style game.}
+            \resumeItem{Created a playable 2D platformer, demonstrating physics, player movement, and collision handling.}
+            \resumeItem{Published starter assets and live-coded core mechanics to teach concepts like scene management and coroutines.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Marktris} $|$ \emph{Godot Engine, GDScript, Vercel}}{Jan 2024 -- Mar 2024}
+          \resumeItemListStart
+            \resumeItem{Utilized the Godot Engine's TileMap system to create a playable version of modern tetris, including collision-detection for the modern SRS (Super Rotation System).}
+            \resumeItem{Deployed on the web via Godot Web Export, Github, and Vercel.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------EXTRACURRICULAR-----------
+\section{Extracurricular}
+
+    \resumeSubHeadingListStart
+    
+      \resumeProjectHeading
+          {\textbf{Association for Computing Machinery (ACM)} $|$ \emph{President, Marketing Team Lead}}{Aug 2022 -- Present}
+          \resumeItemListStart
+            \resumeItem{Lead the largest tech student organization at CSUF with over \textbf{2,400} members and \textbf{50+} officers across 8 branches.}
+            \resumeItem{Doubled outreach from previous year and secured \textbf{\$1,500} in new sponsorships for FullyHacks 2025.}
+            \resumeItem{Supported ACM’s community growth by serving as the Marketing Team Lead, a GameDev Officer, and Node Buds Big, managing social media presence, leading Unity workshops and mentoring new members.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Competitive Programming Competition Participant} $|$ \emph{SoCal Region}}{Nov 2024}
+          \resumeItemListStart
+            \resumeItem{Competed in ICPC, solving complex algorithmic problems in a team-based programming competition.}
+            \resumeItem{Placed \textbf{1st} out of 6 teams from CSUF, 29th out of 84 total teams.}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Javascript, Typescript, HTML/CSS, C/C++, C\#, SQL (Postgres), GDScript, R, Intel x86-64 ISA} \\
+     \textbf{Frameworks/Tools}{: React, Svelte, Node.js, Flask, FastAPI, Material-UI, Git, Docker} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
