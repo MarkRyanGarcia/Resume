@@ -120,53 +120,39 @@
 %----------HEADING----------
 
 \begin{center}
-    \textbf{\Huge \scshape Mark Ryan Garcia} \\ \vspace{1pt}
-    \phoneicon \hspace{1pt}(951) 432-6885 $|$ \emailicon \hspace{1pt} \href{mailto:markrygarcia@gmail.com}{\underline{markrygarcia@gmail.com}} $|$ {\linkedinicon} \hspace{1pt} \href{https://www.linkedin.com/in/markryangarcia}{\underline{linkedin.com/in/MarkRyanGarcia}} \\
-    % {\homeicon} Address Here if needed $|$
-    {\githubicon} \hspace{1pt} \href{https://github.com/MarkRyanGarcia}{\underline{github.com/MarkRyanGarcia}} $|$
-    \portfolioicon \hspace{1pt} \href{https://www.markg.dev}{\underline{markg.dev}}
+  \textbf{\Huge \scshape Mark Ryan Garcia}\\[2pt]
+  {\small
+    \phoneicon\ 951-432-6885\ $|$\ 
+    \emailicon\ \href{mailto:markrygarcia@gmail.com}{markrygarcia@gmail.com}\ $|$\ 
+    \linkedinicon\ \href{https://linkedin.com/in/MarkRyanGarcia}{in/MarkRyanGarcia}\ $|$\ 
+    \githubicon\ \href{https://github.com/MarkRyanGarcia}{github/MarkRyanGarcia}\ $|$\ 
+    \portfolioicon\ \href{https://markg.dev}{markg.dev}
+  }
 \end{center}
-
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {California State University, Fullerton}{GPA: 3.82}
-      {B.S. in Computer Science, Minor in Mathematics}{Aug 2022 -- May 2026}
-    \resumeItem{\textbf{Relevant Coursework: }Data Structures and Algorithms, Web Front-End and Back-End Engineering, File Structures and Database Systems, Discrete Mathematics, Calculus I, II, III, Linear Algebra and Differential Equations}
+      {California State University, Fullerton}{Aug 2022 -- May 2026}
+      {B.S. in Computer Science, Minor in Mathematics}{GPA: 3.82}
+      \resumeItemListStart
+    \resumeItem{\textbf{Relevant Coursework: }Data Structures and Algorithms, Web Front-End Engineering, Web Back-End Engineering, File Structures and Database Systems, Discrete Mathematics, Calculus I-III, Lin Alg \& Diff Eqs.}
+    \resumeItemListEnd
   \resumeSubHeadingListEnd
-
+  
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, Javascript, Typescript, HTML/CSS, MySQL, C, C++, C\#, GDScript, R, Intel x86-64 ISA} \\
-     \textbf{Frameworks/Tools}{: React, Svelte, Node.js, FastAPI, Flask, Material-UI, MinIO, Docker, Unity, Godot, Figma} \\
+     \textbf{Languages}{: Python, Javascript, Typescript, HTML/CSS, MySQL, C, C++, C\#, R} \\
+     \textbf{Frameworks/Tools}{: React, Svelte, Node.js, FastAPI, Flask, Material-UI, MinIO, Docker, Unity, Linux, Figma} \\
     }}
  \end{itemize}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
-    \resumeSubheading
-      {Software Engineer Intern}{May 2025 -- Present}
-      {Glenair, Inc.}{Anaheim, CA}
-      \resumeItemListStart
-        \resumeItem{Engineered a full-stack web application to generate Zebra printer label templates, projecting \textbf{\btilde500} labels per month, utilizing React, FastAPI, SQLAlchemy, SQL Server, Labelary API, and Zebra Printer Language.}
-        \resumeItem{Integrated inventory and job-order APIs to auto-populate part and job numbers into a custom Zebra label template, eliminating manual entry errors, guaranteeing \textbf{100\%} audit-trail accuracy, and accelerating workflows.}
-        \resumeItem{Optimized Flask API endpoints by integrating MinIO storage buckets with SQL Server, reducing average file retrieval latency by an average of \textbf{60\%} compared to the previous method of retrieving from SQL blob fields.}
-      \resumeItemListEnd
-      
-% -----------Multiple Positions Heading-----------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
 
     \resumeSubheading
       {Supplemental Instruction (SI) Leader}{Jan 2024 -- Present}
@@ -177,8 +163,17 @@
     \resumeItemListEnd
 
     \resumeSubheading
+      {Software Engineer Intern}{May 2025 -- Aug 2025}
+      {Glenair, Inc.}{Anaheim, CA}
+      \resumeItemListStart
+        \resumeItem{Engineered a full-stack web application to generate Zebra printer label templates, printing approximately \textbf{\btilde600} labels per week, utilizing React, FastAPI, SQLAlchemy, SQL Server, Labelary API, and Zebra Printer Language.}
+        \resumeItem{Integrated inventory and job-order APIs to auto-populate part and job numbers into a custom Zebra label template, eliminating manual entry errors, guaranteeing \textbf{100\%} audit-trail accuracy, and accelerating workflows.}
+        \resumeItem{Optimized Flask API endpoints by integrating MinIO storage buckets with SQL Server, reducing average file retrieval latency by an average of \textbf{60\%} compared to retrieving raw binary files from SQL tables.}
+      \resumeItemListEnd
+
+    \resumeSubheading
       {Crew Trainer}{June 2022 -- May 2025}
-      {McDonalds}{Chino Hills, CA}
+      {McDonalds}{Chino, CA}
       \resumeItemListStart
         \resumeItem{Trained new hires and maintained efficient, high-quality service across multiple stations in a fast-paced setting.}
     \resumeItemListEnd
@@ -211,7 +206,7 @@
     \resumeSubHeadingListStart
     
       \resumeProjectHeading
-          {\textbf{Association for Computing Machinery (ACM)} $|$ \emph{President}}{Aug 2022 -- Present}
+          {\textbf{Association for Computing Machinery (ACM)} $|$ \emph{Club President, Board Officer}}{Aug 2022 -- Present}
           \resumeItemListStart
             \resumeItem{Lead the largest tech student organization at CSUF with over \textbf{2,400} members and \textbf{50+} officers across 8 branches.}
             \resumeItem{Doubled outreach from previous year and secured \textbf{\$1,500} in new sponsorships for FullyHacks 2025.}
@@ -219,14 +214,13 @@
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{Competitive Programming Competition Participant} $|$ \emph{SoCal Region}}{Nov 2024}
+          {\textbf{International Collegiate Programming Contest (ICPC)} $|$ \emph{Participant}}{Nov 2024}
           \resumeItemListStart
-            \resumeItem{Competed in the International Collegiate Programming Contest (ICPC), collaborating with teammates to solve advanced algorithmic problems within a five-hour time limit using efficient, real-time problem-solving strategies.}
+            \resumeItem{Utilized real-time problem-solving strategies, optimized code efficiency, and communicated effectively under the pressure of a 5-hour time limit to tackle complex challenges in a competitive environment.}
             \resumeItem{Placed \textbf{1st} out of 6 teams from CSUF and 29th out of 84 teams overall in the SoCal regional competition.}
           \resumeItemListEnd
           
     \resumeSubHeadingListEnd
-
 
 %-------------------------------------------
 \end{document}
