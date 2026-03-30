@@ -18,6 +18,7 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \input{glyphtounicode}
+% \usepackage{helvet} % Loads Helvetica
 % \usepackage[scaled=0.92]{helvet} % Loads Helvetica, scaled slightly for better fit
 % \renewcommand{\familydefault}{\sfdefault} % Sets Helvetica as the default
 
@@ -106,14 +107,14 @@
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 % Icons
-\usepackage{graphicx}
+% \usepackage{graphicx}
 
-\newcommand{\phoneicon}{\raisebox{-0.3ex}{\includegraphics[height=10pt]{icons/phone-icon.png}}}
-\newcommand{\emailicon}{\raisebox{-0.3ex}{\includegraphics[height=10pt]{icons/email-icon.png}}}
-\newcommand{\linkedinicon}{\raisebox{-0.5ex}{\includegraphics[height=12pt]{icons/linkedin-icon.png}}}
-\newcommand{\githubicon}{\raisebox{-0.5ex}{\includegraphics[height=12pt]{icons/github-icon.png}}}
-\newcommand{\portfolioicon}{\raisebox{-0.3ex}{\includegraphics[height=10pt]{icons/portfolio-icon.png}}}
-\newcommand{\homeicon}{\raisebox{-0.3ex}{\includegraphics[height=10pt]{icons/house-solid.png}}}
+% \newcommand{\phoneicon}{\raisebox{-0.3ex}{\includegraphics[height=10pt]{icons/phone-icon.png}}}
+% \newcommand{\emailicon}{\raisebox{-0.3ex}{\includegraphics[height=10pt]{icons/email-icon.png}}}
+% \newcommand{\linkedinicon}{\raisebox{-0.5ex}{\includegraphics[height=12pt]{icons/linkedin-icon.png}}}
+% \newcommand{\githubicon}{\raisebox{-0.5ex}{\includegraphics[height=12pt]{icons/github-icon.png}}}
+% \newcommand{\portfolioicon}{\raisebox{-0.3ex}{\includegraphics[height=10pt]{icons/portfolio-icon.png}}}
+% \newcommand{\homeicon}{\raisebox{-0.3ex}{\includegraphics[height=10pt]{icons/house-solid.png}}}
 
 % Tilde was too high
 \newcommand{\btilde}{\raisebox{-0.6ex}{\small\textasciitilde}}
@@ -125,7 +126,6 @@
 \begin{document}
 
 %----------HEADING----------
-
 
 \begin{center}
     \textbf{\Huge \scshape \textcolor{main}{Mark Ryan Garcia}} \\ \vspace{2pt}
@@ -151,12 +151,10 @@
       {Software Engineer Intern}{May 2025 -- Aug 2025, Jan 2026 -- Present}
       {Glenair, Inc.}{Anaheim, CA}
       \resumeItemListStart
-
         \resumeItem{Engineered a full-stack web app used to generate ZPL templates, supporting production of \textbf{600+ labels/week}}
-        \resumeItem{Optimized API endpoints by integrating MinIO buckets with SQL Server, reducing file retrieval latency by \textbf{40\%}}
-        \resumeItem{Developed a cross-platform monitoring tool using PowerShell (Windows) and Bash/Cron (Linux) to transmit real-time telemetry to a centralized dashboard, automatically alerting admins to prevent server overloads.}
+        \resumeItem{Optimized API endpoints by integrating MinIO buckets with MSSQL Server, reducing file retrieval latency by \textbf{40\%}}
+        \resumeItem{Developed a cross-platform monitoring tool using PowerShell (Windows) and Bash/Cron (Linux) to transmit real-time telemetry to a centralized dashboard, automatically alerting admins to prevent server overloads}
         \resumeItem{Automated integration testing across multiple APIs via \textbf{PyTest}, increasing data reliability by approximately \textbf{20\%}}
-
       \resumeItemListEnd
 
     \resumeSubheading
@@ -164,7 +162,6 @@
       {California State University, Fullerton}{Fullerton, CA}
       \resumeItemListStart
         \resumeItem{Increased student grades and comprehension an average of \textbf{10\%} by leading \textbf{120 peer-assisted study sessions} across \textbf{four semesters} and developing targeted review materials that simplified key Calculus I and II concepts}
-        \resumeItem{Led collaborative, peer-to-peer problem-solving sessions to reinforce foundational Calculus I and II topics}
     \resumeItemListEnd
 
     % \resumeSubheading
@@ -182,35 +179,49 @@
 \section{\href{https://markgarcia.dev/projects}{\textcolor{main}{\textbf{Projects}}}}
     \resumeSubHeadingListStart
     
+    % \resumeProjectHeading
+    %     {\textbf{\href{https://github.com/elenav24/cpsc465-event-rsvp}{Cohosted}} $|$ \emph{Docker, AWS (S3, Lambda, Cognito), CI/CD}}{}
+    %     \resumeItemListStart
+    %         \resumeItem{}
+            
+    %     \resumeItemListEnd
+    
     \resumeProjectHeading
         {\textbf{\href{https://github.com/MarkRyanGarcia/acm-march-madness-2026}{ACM March Madness}} $|$ \emph{FastAPI, React, SQL, Clerk}}{}
         \resumeItemListStart
             \resumeItem{Led development for a 5-day DSA coding challenge for \textbf{15+ teams}, resulting in \textbf{150+ problem attempts}}
-            \resumeItem{Integrated \textbf{Clerk} Authentication via GitHub \textbf{OAuth} to secure sensitive API routes and manage user sessions}
+            \resumeItem{Integrated \textbf{Clerk} Authentication via GitHub \textbf{OAuth 2.0} to secure sensitive API routes and manage user sessions}
             \resumeItem{Managed the full deployment pipeline using \textbf{Vercel} and \textbf{Cloudflare} to ensure high availability during the live event}
             
         \resumeItemListEnd
-     
-      % \resumeProjectHeading
-      %     {\textbf{\href{https://github.com/MarkRyanGarcia/conquian333.com}{conquian333.com}} $|$ \emph{React, TypeScript, Tailwind CSS}}{}
-      %     \resumeItemListStart
-      %       \resumeItem{Built an interactive Sudoku solver and visualizer, displaying step by step solving decisions in real time}
-      %       \resumeItem{Implemented multiple solving strategies including backtracking, backtracking with forward checking and MRV heuristics, and an emulation of a human style approach to solving a sudoku puzzle}
-      %     \resumeItemListEnd
+        
+        \resumeProjectHeading
+          {\textbf{\href{https://github.com/MarkRyanGarcia/fapi-init}{fapi-init}} $|$ \emph{Go, CLI, Docker}}{} 
+          \resumeItemListStart
+            \resumeItem{Built a CLI tool that scaffolds production-ready FastAPI projects, reducing initial setup time by up to \textbf{90\%}}
+            \resumeItem{Designed a modular generation system letting users compose only the integrations they need. PostgreSQL with SQLAlchemy, SQLModel, or FastCRUD; MongoDB via PyMongo; Redis caching; and OIDC authentication}
+          \resumeItemListEnd
       
       \resumeProjectHeading
           {\textbf{\href{https://devpost.com/software/realease}{Realease}} $|$ \emph{AI/ML, React, FastAPI, SQL, Clerk}}{}
           \resumeItemListStart
             \resumeItem{Built the backend infrastructure for an AI-powered real estate platform, integrating live Zillow market data via RapidAPI and connecting it to a team-built XGBoost valuation and Monte Carlo risk simulation pipeline}
-            \resumeItem{Designed a PostgreSQL schema to persist per-user analyses and saved properties, enabling the LLM chatbot to reference each user's historical context and liked listings across sessions}
+            \resumeItem{Designed a PostgreSQL schema to enable the LLM chatbot to reference each user's history across sessions}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{\href{https://devpost.com/software/trace-x8b97p}{True Cost}} $|$ \emph{FastAPI, Python, Cohere AI, React, TypeScript, Tailwind CSS}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack sustainability tool that aggregates 20+ data points from 4 APIs (Climatiq, Rainforest, WikiRate, Cohere AI) to calculate real-time environmental and ethical impact scores for consumer products}
+            \resumeItem{Implemented an interactive 3D supply chain visualization using React and Globe.gl, mapping asynchronous geocoded transit routes, transportation modes, and carbon emissions to provide full lifecycle transparency}
           \resumeItemListEnd
           
-      \resumeProjectHeading
-          {\textbf{\href{https://sudoku.markgarcia.dev}{Sudoku Visualizer}} $|$ \emph{React, TypeScript, Tailwind CSS}}{}
-          \resumeItemListStart
-            \resumeItem{Built an interactive Sudoku solver and visualizer, displaying step by step solving decisions in real time}
-            \resumeItem{Implemented multiple solving strategies including backtracking, backtracking with forward checking and MRV heuristics, and an emulation of a human style approach to solving a sudoku puzzle}
-          \resumeItemListEnd
+      % \resumeProjectHeading
+      %     {\textbf{\href{https://sudoku.markgarcia.dev}{Sudoku Visualizer}} $|$ \emph{React, TypeScript, Tailwind CSS}}{}
+      %     \resumeItemListStart
+      %       \resumeItem{Built an interactive Sudoku solver and visualizer, displaying step by step solving decisions in real time}
+      %       \resumeItem{Implemented multiple solving strategies including backtracking, backtracking with forward checking and MRV heuristics, and an emulation of a human style approach to solving a sudoku puzzle}
+      %     \resumeItemListEnd
           
     \resumeSubHeadingListEnd
 
@@ -239,7 +250,7 @@
  \section{\textcolor{main}{\textbf{Technical Skills}}}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, TypeScript/JavaScript, SQL, C/C++, C\#, Java, Golang, HTML/CSS, GDScript} \\
+     \textbf{Languages}{: Python, TypeScript/JavaScript, SQL, C/C++, C\#, Java, Golang, HTML/CSS} \\
      \textbf{Frameworks/Web}{: FastAPI, Flask, PyTest, Clerk, React, Tanstack Query, Material-UI, Node.js, Figma} \\
      \textbf{Cloud/DevOps}{: Docker, Terraform, AWS (S3, Lambda, ECR, EC2), Google Cloud Platform, Vercel, Render} \\
      \textbf{Databases \& Tools}{: Microsoft SQL Server, PostgreSQL, Neon, Firebase, Postman, Insomnia, Git} \\
